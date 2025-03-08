@@ -8,7 +8,7 @@ export default function LoginForm({ Headinglevel = 1 }) {
             <form>
                 <FormInput label="Usuario:" />
                 <FormInput label="Contraseña:" type="password" />
-                <Button>ingresar</Button>
+                <Button type="submit">Ingresar</Button>
             </form>
         </section>
     );

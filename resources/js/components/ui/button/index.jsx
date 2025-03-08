@@ -1,8 +1,12 @@
 import styles from "./index.module.css";
-export default function Button({ children, ...props }) {
+
+export default function Button({ children, styleType = "primary", ...props }) {
     return (
-        <Button className={styles.Button} {...props}>
+        <button
+            className={`${styles.button} ${styles[`button-${styleType}`]}`}
+            {...props}
+        >
             {children}
-        </Button>
+        </button>
     );
 }
