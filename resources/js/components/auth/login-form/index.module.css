@@ -1,0 +1,13 @@
+.section,
+.section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    gap: 1rem;
+
+    form {
+        gap: 0.5rem;
+    }
+}
