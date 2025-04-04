@@ -5,7 +5,7 @@ export default function LoginPage() {
     return (
         <>
             <Head title="Inicio de Sesion" />
-            <LoginForm />
+            <LoginForm Headinglevel={1} />
         </>
     );
 }
