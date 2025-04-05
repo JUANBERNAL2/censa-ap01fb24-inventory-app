@@ -1,9 +1,44 @@
-.label {
+.form-input {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
 
-    span {
-        font-size: x-small;
+    .label {
+        font-size: small;
+        font-style: italic;
     }
+}
+
+.form-input .input-group {
+    display: flex;
+    border: 1px solild black;
+    border-radius: 5px;
+    overflow: hidden;
+
+    input {
+        flex: 1;
+        border: none;
+        padding: 0.25rem 0.5rem;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+
+    button {
+        padding: 0;
+        border: none;
+        margin: 0;
+        background: unset;
+        color: var(--color-secondary);
+        cursor: pointer;
+    }
+}
+
+.form-input .input-group:has(input:focus-visible) {
+    border-width: 2px;
+}
+
+.form-input .input-group:has(button) {
+    padding-right: 0.5rem;
 }
